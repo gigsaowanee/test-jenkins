@@ -2,16 +2,12 @@ pipeline {
     agent any
 
     stages {
-       stage('Integration') {
-   junit 'report.xml'
-}
+      stage('Test'){
+            steps{
+                sh 'cd src/ ; java -jar ../lib/junit-platform-console-standalone-1.7.0-all.jar -cp "." --select-class CarTest --reports-dir="reports"'
+                junit 'report.xml'
+            }
+        }
 
-junit 'report.xml'
-
-stage('Ignored') {
-  withChecks('Integration Tests') {
-    junit 'report.xml'
-  }
-}
     }
 }
