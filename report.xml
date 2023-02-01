@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="2" failures="0" errors="0" time="2.119">
-  <testsuite name="Supplier Contract Test" errors="0" failures="0" skipped="0" timestamp="2023-02-01T10:52:49" time="1.903" tests="1">
-    <testcase classname="Supplier Contract Test response should matched with snapshots" name="Supplier Contract Test response should matched with snapshots" time="0.367">
+<testsuites name="jest tests" tests="2" failures="1" errors="0" time="2.007">
+  <testsuite name="Supplier Contract Test" errors="0" failures="0" skipped="0" timestamp="2023-02-01T11:07:01" time="1.687" tests="1">
+    <testcase classname="Supplier Contract Test response should matched with snapshots" name="Supplier Contract Test response should matched with snapshots" time="0.185">
     </testcase>
   </testsuite>
-  <testsuite name="Supplier Contract Test" errors="0" failures="0" skipped="0" timestamp="2023-02-01T10:52:49" time="1.907" tests="1">
-    <testcase classname="Supplier Contract Test response should matched with snapshots with data" name="Supplier Contract Test response should matched with snapshots with data" time="0.372">
+  <testsuite name="Supplier Contract Test" errors="0" failures="1" skipped="0" timestamp="2023-02-01T11:07:01" time="1.726" tests="1">
+    <testcase classname="Supplier Contract Test response should matched with snapshots" name="Supplier Contract Test response should matched with snapshots" time="0.249">
+      <failure>Error: expect(received).toMatchSnapshot(properties)
+
+Snapshot name: `Supplier Contract Test response should matched with snapshots 1`
+
+- Snapshot  - 1
++ Received  + 1
+
+@@ -1,7 +1,7 @@
+  Object {
+-   &quot;active&quot;: Any&lt;String&gt;,
++   &quot;active&quot;: Any&lt;Number&gt;,
+    &quot;description&quot;: Any&lt;String&gt;,
+    &quot;id&quot;: Any&lt;Number&gt;,
+    &quot;nameEN&quot;: Any&lt;String&gt;,
+    &quot;nameTH&quot;: Any&lt;String&gt;,
+    &quot;orderIndex&quot;: Any&lt;Number&gt;,
+    at Object.&lt;anonymous&gt; (/Users/gigsaowanee/Documents/project/contract-test/src/jest-test/master-success.spec.ts:10:35)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
   </testsuite>
 </testsuites>
