@@ -5,7 +5,7 @@
     </testcase>
   </testsuite>
   <testsuite name="Supplier Contract Test" errors="0" failures="0" skipped="0" timestamp="2023-02-01T10:52:49" time="1.907" tests="1">
-    <testcase classname="Supplier Contract Test response should matched with snapshots" name="Supplier Contract Test response should matched with snapshots" time="0.372">
+    <testcase classname="Supplier Contract Test response should matched with snapshots with data" name="Supplier Contract Test response should matched with snapshots" time="0.372">
     </testcase>
   </testsuite>
 </testsuites>
