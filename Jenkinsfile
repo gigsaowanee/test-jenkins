@@ -29,5 +29,8 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+        stage('testing') {
+            junit 'report.xml'
+        }
     }
 }
