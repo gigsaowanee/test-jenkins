@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="contract testing" tests="2" time="0.219">
-  <testsuite name="get master fail" id="9206c619-6095-456a-bbcf-8231de529e0a" timestamp="2023-02-02T03:05:44.354Z" tests="2" failures="0" errors="0" time="0.138">
-    <testcase name="Status code is 200" time="0.138" classname="ContractTesting"/>
-    <testcase name="Validating the API schema" time="0.138" classname="ContractTesting"/>
+<testsuites name="contract testing" tests="2" time="0.223">
+  <testsuite name="get master fail" id="9206c619-6095-456a-bbcf-8231de529e0a" timestamp="2023-02-02T03:16:07.532Z" tests="2" failures="0" errors="0" time="0.113">
+    <testcase name="Status code is 200" time="0.113" classname="ContractTesting"/>
+    <testcase name="Validating the API schema" time="0.113" classname="ContractTesting"/>
   </testsuite>
-  <testsuite name="get master success" id="bed3e11d-4a28-4464-a156-69711561496c" timestamp="2023-02-02T03:05:44.354Z" tests="2" failures="0" errors="0" time="0.081">
-    <testcase name="Status code is 200" time="0.081" classname="ContractTesting"/>
-    <testcase name="Validating the API schema" time="0.081" classname="ContractTesting"/>
+  <testsuite name="get master success" id="bed3e11d-4a28-4464-a156-69711561496c" timestamp="2023-02-02T03:16:07.532Z" tests="2" failures="1" errors="0" time="0.110">
+    <testcase name="Status code is 200" time="0.110" classname="ContractTesting"/>
+    <testcase name="Validating the API schema" time="0.110" classname="ContractTesting">
+      <failure type="AssertionFailure" message="expected data to satisfy schema but found following errors: &#xA;data.id should be object">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 71efc626-4957-425c-8637-ec5f865ab8ee.]]>
+        <![CDATA[Collection name: contract testing.]]>
+        <![CDATA[Request name: get master success.]]>
+        <![CDATA[Test description: Validating the API schema.]]>
+        <![CDATA[Error message: expected data to satisfy schema but found following errors: 
+data.id should be object.]]>
+        <![CDATA[Stacktrace: AssertionError: expected data to satisfy schema but found following errors: 
+data.id should be object
+   at Object.eval sandbox-script.js:2:2).]]>
+      </failure>
+    </testcase>
   </testsuite>
 </testsuites>
